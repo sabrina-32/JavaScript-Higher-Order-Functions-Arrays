@@ -40,17 +40,41 @@ companies.forEach(function(comy){
 
 //filter
 
-console.log("\n\nTESTING FILTER");
+console.log("\n\nTESTING FILTER ");
 
-const Drink = ages.filter(function (age) {
-    if(age>=21){
-        return true;
-    }
-});
+// const Drink = ages.filter(function (age) {
+//     if(age>=21){
+//         return true;
+//     }
+// });
 
-console.log(Drink);
+
+const  canDrink = ages.filter(ages=> ages>=21);
+
+console.log(canDrink);
 
 
 //map
+
+//create  array of  name  of  company
+
+const companyNames = companies.map(function (company) {
+    return company.name;
+});
+console.log(companyNames);
+
+
 //sort
+
+
+const sortAges = ages.sort((a,b) => b-a);
+
+console.log(sortAges);
+
 //reduce
+
+const ageSum  =  ages.reduce(function (total,  age) {
+    return total+age;
+});
+console.log(ageSum);
+
