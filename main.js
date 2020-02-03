@@ -18,13 +18,39 @@ const ages = [33,20,12,16,5,54,21,44,61,13,15,45,25,64,32];
 // }
 
 //forEach
+console.log("TESTING forEach\n\n");
+
 companies.forEach(function(comy){
     console.log(comy.category);
 
 
 });
 
+
+// let canDrink = [];
+// for(let i = 0; i<ages.length; i++){
+//     if (ages[i]>=21) {
+//         canDrink.push(ages[i])
+        
+//     }
+// }
+
+// console.log(canDrink);
+
+
 //filter
+
+console.log("\n\nTESTING FILTER");
+
+const Drink = ages.filter(function (age) {
+    if(age>=21){
+        return true;
+    }
+});
+
+console.log(Drink);
+
+
 //map
 //sort
 //reduce
